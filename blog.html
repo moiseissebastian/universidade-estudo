@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universidade Website - Estudo</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<section class="sub-cabecalho">
+    <nav>
+        <a href="index.html"><img src="imagens/logo.png"></a>
+        <div class="link-navegacao" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="sobre.html">SOBRE</a></li>
+                <li><a href="cursos.html">CURSO</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="contato.html">CONTATO</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Nossos Certificados & Programas Online para 2022</h1>
+</section>
+
+<!---------- Conteúdo blog ----------->
+
+<section class="conteudo-blog">
+    <div class="rolagem">
+        <div class="blog-esquerda">
+            <img src="imagens/certificate.jpg">
+            <h2>Nossos Certificados & Programas Online para 2022</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas hendrerit mi vel mauris egestas placerat. Etiam varius lorem iaculis sapien malesuada lobortis. Nam mollis mauris dolor, quis vestibulum dolor vestibulum eget. Nam augue augue, eleifend non dictum vitae, aliquam nec massa. Aliquam lacinia turpis id leo hendrerit congue.</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas hendrerit mi vel mauris egestas placerat. Etiam varius lorem iaculis sapien malesuada lobortis. Nam mollis mauris dolor, quis vestibulum dolor vestibulum eget. Nam augue augue, eleifend non dictum vitae, aliquam nec massa. Aliquam lacinia turpis id leo hendrerit congue. Nunc condimentum hendrerit justo, a eleifend dolor ultrices nec. Donec vel aliquet enim, id varius velit.</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas hendrerit mi vel mauris egestas placerat. Etiam varius lorem iaculis sapien malesuada lobortis. Nam mollis mauris dolor, quis vestibulum dolor vestibulum eget. Nam augue augue, eleifend non dictum vitae, aliquam nec massa. Aliquam lacinia turpis id leo hendrerit congue. Nunc condimentum hendrerit justo, a eleifend dolor ultrices nec. Donec vel aliquet enim, id varius velit. Aenean rhoncus, justo vitae blandit sollicitudin, sem nibh accumsan lorem, at ullamcorper sem erat vel leo. Ut semper justo commodo vehicula consequat. Curabitur vel accumsan mi. Integer euismod sed massa nec fringilla.</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas hendrerit mi vel mauris egestas placerat. Etiam varius lorem iaculis sapien malesuada lobortis. Nam mollis mauris dolor, quis vestibulum dolor vestibulum eget. Nam augue augue, eleifend non dictum vitae, aliquam nec massa. Aliquam lacinia turpis id leo hendrerit congue. Nunc condimentum hendrerit justo, a eleifend dolor ultrices nec.</p>
+
+            <div class="caixa-comentarios">
+                <h3>Deixe um comentário</h3>
+                <form class="form-comentario">
+                    <input type="text" placeholder="Insira Seu Nome">
+                    <input type="email" placeholder="Insira Seu E-mail">
+                    <textarea rows="5" placeholder="Seu Comentário"></textarea>
+                    <button type="submit" class="visite-botao botao-vermelho">POSTAR COMENTÁRIO</button>
+                </form>
+            </div>
+
+        </div>
+        <div class="blog-direita">
+            <h3>Categorias</h3>
+            <div>
+                <span>Análise de Negócios</span>
+                <span>21</span>
+            </div>
+            <div>
+                <span>Ciência de Dados</span>
+                <span>28</span>
+            </div>
+            <div>
+                <span>Machine Learn</span>
+                <span>15</span>
+            </div>
+            <div>
+                <span>Ciência da Computação</span>
+                <span>34</span>
+            </div>
+            <div>
+                <span>AutoCAD</span>
+                <span>42</span>
+            </div>
+            <div>
+                <span>Jornalismo</span>
+                <span>22</span>
+            </div>
+            <div>
+                <span>Comércio</span>
+                <span>30</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!---------- Rodapé ----------->
+
+<section class="rodape">
+    <h4>Sobre nós</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultrices vel urna eu facilisis. Quisque dictum nisl velit,<br>eu varius orci commodo non. Etiam ut risus vel velit vehicula bibendum.</p>
+    <div class="icones">
+        <i class="fa fa-facebook""></i>
+        <i class="fa fa-twitter""></i>
+        <i class="fa fa-instagram""></i>
+        <i class="fa fa-linkedin""></i>
+    </div>
+    <p>Feito com <i class="fa fa-heart-o""></i> por Moiseis Sebastian</p>
+</section>
+
+<!---------JavaScript para alternar o menu----------->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universidade Website - Estudo</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<section class="sub-cabecalho">
+    <nav>
+        <a href="index.html"><img src="imagens/logo.png"></a>
+        <div class="link-navegacao" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="sobre.html">SOBRE</a></li>
+                <li><a href="cursos.html">CURSO</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="contato.html">CONTATO</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Sobre Nós</h1>
+</section>
+
+<!---------- Conteúdo sobre nós ----------->
+
+<section class="sobre-nos">
+    <div class="rolagem">
+        <div class="col-sobre">
+            <h1>Somos a maior universidade do mundo</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas hendrerit mi vel mauris egestas placerat. Etiam varius lorem iaculis sapien malesuada lobortis. Nam mollis mauris dolor, quis vestibulum dolor vestibulum eget. Nam augue augue, eleifend non dictum vitae, aliquam nec massa. Aliquam lacinia turpis id leo hendrerit congue.</p>
+            <a href="" class="visite-botao botao-vermelho">EXPLORE AGORA</a>
+        </div>
+        <div class="col-sobre">
+            <img src="imagens/about.jpg">
+        </div>
+    </div>
+</section>
+
+<!---------- Rodapé ----------->
+
+<section class="rodape">
+    <h4>Sobre nós</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultrices vel urna eu facilisis. Quisque dictum nisl velit,<br>eu varius orci commodo non. Etiam ut risus vel velit vehicula bibendum.</p>
+    <div class="icones">
+        <i class="fa fa-facebook""></i>
+        <i class="fa fa-twitter""></i>
+        <i class="fa fa-instagram""></i>
+        <i class="fa fa-linkedin""></i>
+    </div>
+    <p>Feito com <i class="fa fa-heart-o""></i> por Moiseis Sebastian</p>
+</section>
+
+<!---------JavaScript para alternar o menu----------->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+
+</body>
+</html>
