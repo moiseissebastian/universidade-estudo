@@ -368,6 +368,10 @@ h3 {
     color: #f44336;
 }
 
+.icones a, .icones a:link, .icones a:hover {
+    text-decoration: none;
+}
+
 /*----- Página sobre nós -----*/
 
 .sub-cabecalho {
