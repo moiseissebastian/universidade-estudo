@@ -23,5 +23,5 @@ $headers .= "Reply-To: $email_visitante \r\n";
 mail($para, $email_assunto ,$email_corpo, $cabecalhos);
 
 header("Location: contato.html");
-echo "<meta http-equiv='refresh' content='10;UTL../contato.html'>";
+echo "<meta http-equiv='refresh' content='10;URL../contato.html'>";
 ?>
