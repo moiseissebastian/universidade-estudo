@@ -15,12 +15,13 @@ $email_corpo = "Nome do Usuário: $nome.\n".
 
 $para = 'moiseissebastian1@gmail.com';
 
-$cabecalhos = "Para: $email_de \r\n";
+$headers = "MIME-Version: 1.0\n";
+$headers .= "Content-type: text/html; charset=iso-8859-1\n";
+$headers .= "From: $nome <$email_de>";
+$headers .= "Reply-To: $email_visitante \r\n";
 
-$cabecalhos .= "Responder-a: $email_visitante \r\n"
+mail($para, $email_assunto ,$email_corpo, $cabecalhos);
 
-mail($para,$email_assunto,$email_corpo,$cabecalhos);
-
-header("Localização: contato.html");
-
+header("Location: contato.html");
+echo "<meta http-equiv='refresh' content='10;UTL../contato.html'>";
 ?>
